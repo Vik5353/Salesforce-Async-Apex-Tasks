@@ -9,6 +9,7 @@ public class AccountProcessorTest {
         insert con1;
         Contact con2 = new Contact(LastName = 'myTestContact', AccountId = acc1.id);
         insert con2;
+        
         test.startTest();
         AccountProcessor.countContacts(new List<Id>{acc1.id});
         test.stopTest();
